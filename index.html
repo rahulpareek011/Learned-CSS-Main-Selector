@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        /* Element selector */
+        div {
+            /* background-color: red; */
+        }
+
+        /* class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child selector */
+        div>p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* descendant selector */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* psuedo Selector */
+        a:visited{
+            color: yellow;
+        }
+
+        /* link color will be green */
+        a:link{
+            color: green;
+        }l̥
+
+        /* when i click it will blink in red and open the website */
+        a:active{
+            background-color: red;
+        }
+
+        /* whe i hover to links then their background color is changed to yellow */
+        a:hover{
+            background-color: yellow;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+
+    <div class="red">
+        i am div
+        <article>
+            <p>i am a para inside a div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        i am another div
+    </div>
+
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+</body>
+
+</html>
